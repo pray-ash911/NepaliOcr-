@@ -72,7 +72,7 @@ async def extract_pdf(
     Extracts Devanagari/Nepali texts from uploaded PDFs, applies post-processing,
     and returns rendered Markdown and raw extracted data.
     """
-    # 1. File Extension Validation
+    # 1. File Extension Validations
     ext = os.path.splitext(file.filename)[1].lower()
     if ext not in ALLOWED_EXTENSIONS:
         raise HTTPException(
