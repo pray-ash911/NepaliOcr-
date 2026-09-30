@@ -10,7 +10,7 @@ UPLOAD_DIR = DATA_DIR / "uploads"
 OUTPUT_DIR = DATA_DIR / "outputs"
 SAMPLE_DIR = BASE_DIR / "sample_docs"
 
-# Create directories if they don't exists
+# Create directories if they don't exist
 for path in [DATA_DIR, UPLOAD_DIR, OUTPUT_DIR, SAMPLE_DIR]:
     path.mkdir(parents=True, exist_ok=True)
 
