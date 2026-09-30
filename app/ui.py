@@ -91,7 +91,7 @@ if uploaded_file:
                         mime="text/markdown"
                     )
 
-    # Cleanup temp file on process end
+    # Cleanup temp file on process ends
     try:
         os.remove(tmp_path)
     except Exception:
