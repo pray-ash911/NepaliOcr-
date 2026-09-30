@@ -11,7 +11,7 @@ class DevanagariPostProcessor:
     """
 
     def __init__(self):
-        # Common Devanagari Unicode Regex Ranges
+        # Common Devanagari Unicode Regex Range
         self.devanagari_char_pattern = re.compile(r'[\u0900-\u097F]')
         
         # Precompiled regex pattern for performance
